@@ -1,0 +1,48 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    box-sizing: border-box;
+    user-select: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+li {
+    list-style-type: none;
+}
+.flex {
+    display: flex;
+}
+.space-betwin {
+    justify-content: space-between;
+}
+.center {
+    margin: 0 auto;
+}
+.container {
+    max-width: 1170px;
+    @media (max-width: 1180px) {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
+
+
+
+
+@import 'blocks/header.scss';
+@import 'blocks/promo.scss';
+@import 'blocks/popular.scss';
+@import 'blocks/description.scss';
+@import 'blocks/news.scss';
+@import 'blocks/footer.scss';
+@import 'blocks/burger';

@@ -1,0 +1,52 @@
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    @media (max-width: 650px) {
+        display: flex;
+    }
+    &__btn {
+        display: none;
+        width: 20px;
+        height: 2px;
+        background-color: #555248;
+        transition: .6s all;
+        &:nth-child(2) {
+            width: 25px;
+            margin: 6px 0;
+        }
+        @media (max-width: 768px) {
+            display: block;
+        }
+
+    }
+}
+
+.burger__block {
+    width: 75%;
+    position: fixed;
+    left: -75%;
+    top: 0;
+    height: 100vh;
+    padding: 50px;
+    background: hsla(46, 8%, 31%, 0.9);
+    transition: 0.6s all;
+    z-index: 1;
+    &-item {       
+        flex-direction: column;
+        text-align: left;     
+    }
+    &-list {
+        margin: 30px 0;
+        letter-spacing: 3px;
+        font-size: 20px;
+        & a {
+            color: #EAE3D4;
+            font-size: 16px;
+        }
+    }
+    &-active {
+        display: block;
+    }
+}

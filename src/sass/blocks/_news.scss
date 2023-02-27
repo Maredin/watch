@@ -1,0 +1,86 @@
+.news {
+    padding-top: 81px;
+    padding-bottom: 90px;
+        @media (max-width: 763px) {
+           flex-direction: column;
+           padding-top: 50px;
+           padding-bottom: 50px;
+        }
+    &__descr {
+        flex-direction: column;
+        margin-top: 140px;
+            @media (max-width: 1160px) {
+                margin-top: 0px;
+                justify-content: space-between;
+            }
+        &-title {
+            font-family: 'Playfair Display', serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            color: #1B1A17;
+                @media (max-width: 763px) {
+                    margin-bottom: 30px;
+                }
+        }
+        &-subtitle {
+            margin-top: 40px;
+            max-width: 367px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 27px;
+            color: #444240;
+                @media (max-width: 1160px) {
+                    margin-top: 0px;
+                    margin-bottom: 50px;
+                }
+                @media (max-width: 763px) {
+                    margin-top: 20px;
+                    margin-bottom: 40px;
+                }
+            & span {
+                font-weight: 700;
+                color: #262421;
+            }
+        }
+        &-social {
+            margin-top: 118px;
+                @media (max-width: 1160px) {
+                    margin-top: 0px;
+                }
+                @media (max-width: 763px) {
+                    margin-bottom: 20px;
+                }
+        }
+        &-link {
+            gap: 18px;
+            align-items: center;
+            & li:hover .news__descr-svg path{
+                fill: #D4B098;
+            }
+        }
+    }
+
+    &__banner {
+        gap: 10px;
+            @media (max-width: 763px) {
+                justify-content: center;
+            }
+        &-litle {
+            
+            flex-direction: column;
+            justify-content: space-between;
+            padding-bottom: 4px;
+            & img {
+                width: 100%;
+            }
+        }
+        &-big {
+            & img {
+                width: 100%;
+            }
+        }
+    }
+}

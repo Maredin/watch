@@ -1,0 +1,103 @@
+
+.popular {
+    margin-top: 110px;
+    @media (max-width: 763px) {
+        margin-top: 50px;
+    }
+    &__title {
+        font-family: 'Playfair Display', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        color: #1B1A17;
+        text-align: center;
+            @media (max-width: 320px) {
+                font-size: 30px;
+            }
+    }
+    &__gallery {
+        justify-content: end;
+        & h3 {
+            display: inline;
+            font-family: 'Roboto', serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            color: #444240;
+            padding-bottom: 11.5px;
+            border-bottom: 1px solid #C4C0B6;
+            cursor: pointer;
+                @media (max-width: 600px) {
+                    margin-top: 20px;
+                }
+            &:hover {
+                color: #D4B098;
+            }
+        }
+    }
+}
+.gallery {
+    margin-top: 65px;
+    flex-wrap: wrap;
+    gap: 25px;
+    @media (max-width: 1100px) {
+        justify-content: space-around;
+    }
+    &__cart {
+        background: #FDFDFB;
+        padding: 40px 25px 39px 25px;
+        max-width: 370px;
+            @media (max-width: 400px) {
+                max-width: 320px;
+            }
+        & img {
+            @media (max-width: 400px) {
+                width: 100%;
+            }
+        }
+        &-title {
+            font-family: 'Playfair Display', serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 0.03em;
+            padding-left: 15px;
+        }
+        &-subtitle {
+            font-family: 'Prata', serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            color: rgba(27, 26, 23, 0.82);
+            padding-left: 15px;
+            margin-top: 10px;
+            & svg {
+                margin-left: 4px;
+            }
+        }
+        &-detailed {
+            display: inline-block;
+            font-family: 'Playfair Display', serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            color: #1B1A17;
+            margin-left: 63px;
+            position: relative;
+            cursor: pointer;
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 55%;
+                left: -48px;
+                width: 30px;
+                height: 0px;
+                border: 1px solid #8B8371;
+            }
+            &:hover {
+                color: #D4B098;
+            }
+        }
+    }
+}

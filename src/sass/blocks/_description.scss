@@ -1,0 +1,105 @@
+.description {
+    margin-top: 86px;
+    background-image: url(../../img/discriptionBg.png);
+    max-width: 1366px;
+    padding-top: 52px;
+    padding-bottom: 21px;
+        @media (max-width: 763px) {
+            padding-top: 20px;
+            margin-top: 50px;
+        }
+    &__container {
+        justify-content: center;
+            @media (max-width: 763px) {
+                flex-direction: column-reverse;
+            }
+    }
+    &__banner {
+        & img {
+            width: 100%;
+        }
+    }
+    &__text {
+        padding-left: 69px;
+        margin-top: 88px;
+        max-width: 445px;
+            @media (max-width: 1028px) {
+                max-width: 400px;
+                padding-left: 50px;
+                margin-top: 50px;
+            }
+            @media (max-width: 900px) {
+                max-width: 400px;
+                padding-left: 25px;
+                margin-top: 0px;
+            }
+            @media (max-width: 763px) {
+                max-width: 100%;
+                margin-bottom: 20px;
+                padding-left: 0px;
+            }
+        &-title {
+            font-family: 'Playfair Display', serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            color: #1B1A17;
+                @media (max-width: 763px) {
+                    font-size: 30px;
+                }
+        }
+        &-descr {   
+            font-family: 'Roboto', serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #444240;
+            margin-top: 38px;
+                @media (max-width: 763px) {
+                    margin-top: 20px;
+                }
+        }
+        &-btn {
+            display: inline-block;
+            padding: 26px 38px;
+            background: #D4B098;
+            border: 2px solid #D4B098;
+            font-family: 'Roboto', serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            letter-spacing: 0.05em;
+            color: #FFFFFF;
+            cursor: pointer;
+            margin-top: 45px;
+                @media (max-width: 1000px) {
+                    padding: 20px 30px;
+                }
+                @media (max-width: 763px) {
+                    margin-top: 30px;
+                }
+            &:hover {
+                color: #D4B098;
+                border: 2px solid #D4B098;
+                background: #00000000;
+            }
+        }
+    }
+    &__counter {
+        margin-top: 20px;
+        justify-content: center;
+        gap: 20px;
+        &-number {
+            font-family: 'Prata', serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            color: rgba(27, 26, 23, 0.82);
+        }
+        &-left, &-right {
+            cursor: pointer;
+        }
+    }
+}
